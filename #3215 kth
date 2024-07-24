@@ -1,0 +1,16 @@
+int Kth(int a[], int n,int x,int k)
+{
+    int oara=0;
+    for(int i=0;i<n;i++)
+    {
+        if(x==a[i])
+        {
+            oara++;
+            if(oara==k)
+            {
+                return i;
+            }
+        }
+    }
+    return -1;
+}
